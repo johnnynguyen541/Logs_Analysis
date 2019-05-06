@@ -1,0 +1,57 @@
+vagrant@vagrant:/vagrant/newsdata$ python news.py
+Udacity Log Analysis Project #1
+
+
+        ************************************
+          News Database/Log Analysis CLI
+        ************************************
+        1) What are the most popular three articles of all time?
+        2) Who are the most popular article authors of all time?
+        3) On which days did more than 1 percent of requests lead to errors?
+        q) Quit Program
+
+Enter your selection: 1
+Title                             | Views
+----------------------------------+--------
+Candidate is jerk, alleges rival  | 342102
+Bears love berries, alleges bear  | 256365
+Bad things gone, say good people  | 171762
+
+        ************************************
+          News Database/Log Analysis CLI
+        ************************************
+        1) What are the most popular three articles of all time?
+        2) Who are the most popular article authors of all time?
+        3) On which days did more than 1 percent of requests lead to errors?
+        q) Quit Program
+
+Enter your selection: 2
+Name                              | Views
+----------------------------------+--------
+Ursula La Multa                   | 512805
+Rudolf von Treppenwitz            | 427781
+Anonymous Contributor             | 171762
+Markoff Chaney                    |  85387
+
+        ************************************
+          News Database/Log Analysis CLI
+        ************************************
+        1) What are the most popular three articles of all time?
+        2) Who are the most popular article authors of all time?
+        3) On which days did more than 1 percent of requests lead to errors?
+        q) Quit Program
+
+Enter your selection: 3
+Date          | Error_Rate
+--------------+------------------
+2016-07-17    | 2.26268624680273
+
+        ************************************
+          News Database/Log Analysis CLI
+        ************************************
+        1) What are the most popular three articles of all time?
+        2) Who are the most popular article authors of all time?
+        3) On which days did more than 1 percent of requests lead to errors?
+        q) Quit Program
+
+Enter your selection: q
