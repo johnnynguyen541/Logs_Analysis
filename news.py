@@ -8,7 +8,7 @@ from newsdb import get_posts
 # Query String #1: What are the most popular three articles of all time?
 query_1 = """SELECT articles.title, COUNT(*) AS views
         FROM log JOIN articles
-        ON log.path LIKE CONCAT('%', articles.slug, '%')
+        ON log.path LIKE CONCAT('%', articles.slug)
         GROUP BY articles.title
         ORDER by views DESC
         LIMIT 3;"""
@@ -18,7 +18,7 @@ query_2 = """SELECT authors.name, subqa.views
             FROM authors,
                 (SELECT articles.author, COUNT(*) AS views
                 FROM log JOIN articles
-                ON log.path LIKE CONCAT('%', articles.slug, '%')
+                ON log.path LIKE CONCAT('%', articles.slug)
                 GROUP BY articles.author
                 ORDER by views DESC) AS subqa
             WHERE authors.id = subqa.author;"""
